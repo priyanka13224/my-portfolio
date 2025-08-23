@@ -1,159 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .container { max-width: 1100px; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-br from-slate-50 to-slate-100 text-slate-800">
-  <!-- NAV -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
-    <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="font-semibold text-lg">YourName<span class="text-indigo-600">.</span></a>
-      <button id="menuBtn" class="md:hidden p-2"><i data-lucide="menu"></i></button>
-      <ul id="menu" class="hidden md:flex items-center gap-6">
-        <li><a class="hover:text-indigo-600" href="#projects">Projects</a></li>
-        <li><a class="hover:text-indigo-600" href="#skills">Skills</a></li>
-        <li><a class="hover:text-indigo-600" href="#about">About</a></li>
-        <li><a class="hover:text-indigo-600" href="#contact">Contact</a></li>
-        <li>
-          <a class="inline-flex items-center gap-2 bg-indigo-600 text-white px-3 py-2 rounded-lg hover:bg-indigo-700"
-             href="resume.pdf" target="_blank" rel="noopener">
-            <i data-lucide="file-text" class="w-4 h-4"></i> Resume
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <ul id="mobileMenu" class="md:hidden hidden px-4 pb-4 space-y-2">
-      <li><a class="block py-2 hover:text-indigo-600" href="#projects">Projects</a></li>
-      <li><a class="block py-2 hover:text-indigo-600" href="#skills">Skills</a></li>
-      <li><a class="block py-2 hover:text-indigo-600" href="#about">About</a></li>
-      <li><a class="block py-2 hover:text-indigo-600" href="#contact">Contact</a></li>
-      <li><a class="block py-2 text-indigo-600" href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
-    </ul>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Hi, I'm [Your Name]</h1>
+      <p>Web Developer | Data Enthusiast | Problem Solver</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section class="container mx-auto px-4 py-12 md:py-20">
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <p class="text-sm uppercase tracking-wider text-indigo-600 font-semibold">Hello, I’m</p>
-        <h1 class="mt-1 text-4xl md:text-5xl font-extrabold">Your Name</h1>
-        <p class="mt-4 text-lg text-slate-600">
-          Front-End Developer • React • TypeScript • UI Engineering. I build fast,
-          accessible, delightful web apps.
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="profile.jpg" alt="My Photo">
+        <p>
+          I'm passionate about building user-friendly websites and applications.
+          Skilled in Python, Flask, MySQL, and cloud tools. I love solving
+          problems and creating meaningful digital experiences.
         </p>
-        <div class="mt-6 flex items-center gap-3">
-          <a href="#projects" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">See Projects</a>
-          <a href="mailto:you@example.com" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border hover:bg-white">
-            <i data-lucide="mail" class="w-4 h-4"></i> Contact me
-          </a>
-          <a href="https://github.com/yourhandle" target="_blank" rel="noopener" class="p-2 rounded-lg border hover:bg-white">
-            <i data-lucide="github" class="w-5 h-5"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener" class="p-2 rounded-lg border hover:bg-white">
-            <i data-lucide="linkedin" class="w-5 h-5"></i>
-          </a>
-        </div>
-      </div>
-      <div class="relative">
-        <div class="aspect-square rounded-2xl bg-white shadow-xl border"></div>
-        <!-- Put your photo inside the div above as a background-image or an <img> -->
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="container mx-auto px-4 py-12">
-    <h2 class="text-2xl md:text-3xl font-bold">Projects</h2>
-    <p class="text-slate-600 mt-1">A few things I’ve built recently.</p>
-    <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- CARD -->
-      <article class="bg-white rounded-xl border shadow-sm p-5 flex flex-col">
-        <h3 class="font-semibold text-lg">CollegeFind (AI)</h3>
-        <p class="mt-2 text-sm text-slate-600 flex-1">
-          AI-powered college recommendation with filters, speech input, and saved queries.
-        </p>
-        <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="px-2 py-1 rounded-full bg-slate-100">React</span>
-          <span class="px-2 py-1 rounded-full bg-slate-100">Tailwind</span>
-          <span class="px-2 py-1 rounded-full bg-slate-100">Express/Flask</span>
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Secure File Encryption</h3>
+          <p>Python-based PDF encryption, audio recording, and speech-to-text tool.</p>
+          <a href="https://github.com/yourusername/secure-file-encryption" target="_blank">View Project</a>
         </div>
-        <div class="mt-4 flex gap-3">
-          <a class="inline-flex items-center gap-1 text-indigo-600 hover:underline" href="#" target="_blank" rel="noopener">
-            <i data-lucide="external-link" class="w-4 h-4"></i> Live
-          </a>
-          <a class="inline-flex items-center gap-1 text-slate-700 hover:underline" href="#" target="_blank" rel="noopener">
-            <i data-lucide="github" class="w-4 h-4"></i> Code
-          </a>
+        <div class="project-card">
+          <h3>College Recommendation System</h3>
+          <p>Flask + React app to filter colleges based on user input with MySQL storage.</p>
+          <a href="https://github.com/yourusername/college-recommendation" target="_blank">View Project</a>
         </div>
-      </article>
-
-      <!-- Duplicate the card and change content for more projects -->
-      <article class="bg-white rounded-xl border shadow-sm p-5 flex flex-col">
-        <h3 class="font-semibold text-lg">Project Two</h3>
-        <p class="mt-2 text-sm text-slate-600 flex-1">Short description of what it does and why it’s cool.</p>
-        <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="px-2 py-1 rounded-full bg-slate-100">TypeScript</span>
-          <span class="px-2 py-1 rounded-full bg-slate-100">Vite</span>
-        </div>
-        <div class="mt-4 flex gap-3">
-          <a class="inline-flex items-center gap-1 text-indigo-600 hover:underline" href="#"><i data-lucide="external-link" class="w-4 h-4"></i> Live</a>
-          <a class="inline-flex items-center gap-1 text-slate-700 hover:underline" href="#"><i data-lucide="github" class="w-4 h-4"></i> Code</a>
-        </div>
-      </article>
+      </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="container mx-auto px-4 py-12">
-    <h2 class="text-2xl md:text-3xl font-bold">Skills</h2>
-    <div class="mt-4 flex flex-wrap gap-2">
-      <span class="px-3 py-1 rounded-full bg-white border">HTML</span>
-      <span class="px-3 py-1 rounded-full bg-white border">CSS / Tailwind</span>
-      <span class="px-3 py-1 rounded-full bg-white border">JavaScript / TypeScript</span>
-      <span class="px-3 py-1 rounded-full bg-white border">React</span>
-      <span class="px-3 py-1 rounded-full bg-white border">Node / Express</span>
-      <span class="px-3 py-1 rounded-full bg-white border">Python / Flask</span>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: yourname@example.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="container mx-auto px-4 py-12">
-    <h2 class="text-2xl md:text-3xl font-bold">About</h2>
-    <p class="mt-3 text-slate-700 leading-relaxed">
-      Brief bio about you—what you’re passionate about, your strengths, and what you’re looking for.
-      Keep it concise and specific.
-    </p>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="container mx-auto px-4 py-12">
-    <h2 class="text-2xl md:text-3xl font-bold">Contact</h2>
-    <p class="mt-3 text-slate-700">Email me at <a class="text-indigo-600 underline" href="mailto:you@example.com">you@example.com</a></p>
-  </section>
-
-  <footer class="border-t">
-    <div class="container mx-auto px-4 py-6 text-sm text-slate-600 flex justify-between">
-      <span>© <span id="year"></span> Your Name</span>
-      <a href="#" class="hover:text-indigo-600">Back to top ↑</a>
-    </div>
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
 
-  <script>
-    // init icons + mobile menu + year
-    lucide.createIcons();
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const btn = document.getElementById('menuBtn');
-    const list = document.getElementById('mobileMenu');
-    btn.addEventListener('click', () => list.classList.toggle('hidden'));
-  </script>
 </body>
 </html>
